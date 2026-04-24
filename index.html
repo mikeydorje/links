@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links - @mikeydorje</title>
+  <meta name="description" content="Official links for Mikey Dorje.">
+  <meta property="og:title" content="Links - @mikeydorje">
+  <meta property="og:description" content="Official links for Mikey Dorje.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikeydorje.com/links/">
+  <meta name="theme-color" content="#050508">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050508'/%3E%3Cpath d='M32 8l5 14h15l-12 8 5 14-13-9-13 9 5-14-12-8h15z' fill='rgba(255,255,255,0.72)'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #050508;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.6;
+      font-size: 13px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 36px 1rem 0;
+    }
+
+    .app-title {
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: rgba(255,255,255,0.3);
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: rgba(255,255,255,0.18);
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 24px 56px;
+    }
+
+    .hero {
+      margin-top: 34px;
+      display: grid;
+      gap: 16px;
+      justify-items: center;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.02);
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 2px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .bio {
+      max-width: 480px;
+      color: rgba(255,255,255,0.32);
+    }
+
+    .release-card {
+      margin-top: 24px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
+      border-radius: 16px;
+      padding: 18px 16px;
+      transition: all 0.25s;
+    }
+
+    .release-card:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.12);
+      transform: translateY(-2px);
+    }
+
+    .release-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+    }
+
+    .release-link {
+      margin-top: 8px;
+      display: inline-block;
+      color: rgba(255,255,255,0.66);
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .release-link:hover {
+      color: rgba(255,255,255,0.84);
+      border-bottom-color: rgba(255,255,255,0.24);
+    }
+
+    .iab-note {
+      margin-top: 10px;
+      color: rgba(255,255,255,0.26);
+      font-size: 11px;
+    }
+
+    .links {
+      margin-top: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .link-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .link-row:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.8);
+      transform: translateY(-2px);
+    }
+
+    .link-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.28);
+      flex: 0 0 8px;
+    }
+
+    .label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .arrow {
+      color: rgba(255,255,255,0.25);
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .site-footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+    }
+
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .footer-social {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.35);
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.02);
+      text-decoration: none;
+      transition: all 0.25s;
+    }
+
+    .footer-social:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.65);
+      transform: translateY(-2px);
+    }
+
+    .footer-social svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .footer-copy {
+      color: rgba(255,255,255,0.2);
+      font-size: 11px;
+      line-height: 1.8;
+    }
+
+    .footer-copy strong {
+      color: rgba(255,255,255,0.38);
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      main { padding: 0 20px 48px; }
+      .release-link { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="app-title">Links</div>
+    <div class="subtitle">@mikeydorje</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="avatar" aria-label="Avatar placeholder">MD</div>
+      <p class="bio">WIP links page. Temporary placeholders while testing behavior in iOS Instagram in-app browser.</p>
+    </section>
+
+    <section class="release-card" aria-label="Latest release">
+      <div class="release-label">Latest Release</div>
+      <a class="release-link" href="https://bandcamp-codes-worker.mikey-4cf.workers.dev/bcdl" target="_blank" rel="noopener noreferrer" data-link="latest-release">Free Download Codes</a>
+      <p class="iab-note">If this opens inside Instagram, long-press and choose Open in Browser.</p>
+    </section>
+
+    <section class="links" aria-label="Link list">
+      <a class="link-row" href="https://mikeydorje.com/starseed" target="_blank" rel="noopener noreferrer" data-link="starseed">
+        <span class="link-left"><span class="dot"></span><span class="label">Starseed</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://mikeydorje.com/soundcheck" target="_blank" rel="noopener noreferrer" data-link="soundcheck">
+        <span class="link-left"><span class="dot"></span><span class="label">Soundcheck</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" data-link="bandcamp">
+        <span class="link-left"><span class="dot"></span><span class="label">Bandcamp</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://soundcloud.com/mikeydorje" target="_blank" rel="noopener noreferrer" data-link="soundcloud">
+        <span class="link-left"><span class="dot"></span><span class="label">SoundCloud</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://youtube.com/@mikeydorje" target="_blank" rel="noopener noreferrer" data-link="youtube">
+        <span class="link-left"><span class="dot"></span><span class="label">YouTube</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://instagram.com/mikeydorje" target="_blank" rel="noopener noreferrer" data-link="instagram">
+        <span class="link-left"><span class="dot"></span><span class="label">Instagram</span></span><span class="arrow">open</span>
+      </a>
+      <a class="link-row" href="https://github.com/mikeydorje" target="_blank" rel="noopener noreferrer" data-link="github">
+        <span class="link-left"><span class="dot"></span><span class="label">GitHub</span></span><span class="arrow">open</span>
+      </a>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-socials">
+        <a class="footer-social" href="https://github.com/mikeydorje" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.4-4-1.4-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.8 1.4 3.4 1.1.1-.8.4-1.4.8-1.8-2.7-.3-5.5-1.3-5.5-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.1s1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C17.3 5.3 18.3 5.6 18.3 5.6a4.4 4.4 0 0 1 .1 3.1 4.7 4.7 0 0 1 1.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.3.8 1 .8 2v3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a class="footer-social" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
+        </a>
+        <a class="footer-social" href="https://youtube.com/@mikeydorje" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2a3 3 0 0 0-2.1-2.1C19.5 4.5 12 4.5 12 4.5s-7.5 0-9.4.6A3 3 0 0 0 .5 7.2 31.6 31.6 0 0 0 0 12c0 1.6.1 3.2.5 4.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12c0-1.6-.1-3.2-.5-4.8ZM9.6 15.5V8.5L15.8 12l-6.2 3.5Z"/></svg>
+        </a>
+        <a class="footer-social" href="https://instagram.com/mikeydorje" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="footer-social" href="https://soundcloud.com/mikeydorje" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.7 10.4c.4-1.8 2-3.1 3.8-3.1 1.5 0 2.9.9 3.5 2.3 1.9.2 3.4 1.8 3.4 3.8 0 2.1-1.7 3.8-3.8 3.8H6.4A2.9 2.9 0 0 1 3.5 14c0-1.6 1.3-2.9 2.9-2.9.4 0 .8.1 1.2.3.5-.5 1.2-.8 2.1-1Z"/></svg>
+        </a>
+        <a class="footer-social" href="https://dev.to/mikeydorje" target="_blank" rel="noopener noreferrer" aria-label="DEV">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6v4.36h.58c.37 0 .67-.08.84-.23.2-.18.31-.5.31-.95v-2c0-.45-.12-.77-.31-.95zm16.17-6.3H.41C.18 3.75 0 3.94 0 4.19v15.62c0 .25.18.44.41.44h23.18c.23 0 .41-.19.41-.44V4.19c0-.25-.18-.44-.41-.44zM8.69 14.26c0 .9-.55 1.74-1.69 1.74H5v-8h2.01c1.13 0 1.68.84 1.68 1.74v4.52zm4.72-4.37h-2.36v1.73h1.43v1.12h-1.43v1.73h2.36v1.12h-2.84c-.55 0-1.04-.52-1.04-1.06V9.07c0-.54.5-1.06 1.04-1.06h2.84v1.88zm5.69 4.87c-.5 1.17-1.21 1.3-1.77 1.3-.56 0-1.27-.13-1.76-1.3l-1.88-6.71h1.38l1.5 5.59 1.5-5.59h1.38l-1.35 6.71z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; <span id="footer-year"></span> <strong>Mikey Dorje</strong></span><br>
+        <span>WIP links page for Instagram testing.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var year = document.getElementById('footer-year');
+      if (year) year.textContent = String(new Date().getFullYear());
+    })();
+  </script>
+</body>
+</html>

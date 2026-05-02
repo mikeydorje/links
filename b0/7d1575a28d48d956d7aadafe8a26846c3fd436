@@ -1,0 +1,30 @@
+index.html
+  h_b2f6efe2daa9cd 45-53,55-57,59,64-67,69,73,75-76,80,128-129,131-132,136-149,155-156,159,161,163,166-167,171,178
+  57d63f4d9bb6ab72 7,9,21,63,68,70-72,74,77-79,81-84,116-124,158,160,162,165,168-169,173-177,179-193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "b07d1575a28d48d956d7aadafe8a26846c3fd436",
+  "prompts": {
+    "57d63f4d9bb6ab72": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "31202fa2-c929-4a68-9857-7df21c08df4d",
+        "model": "unknown"
+      },
+      "human_author": "Mikey Dorje",
+      "messages": [],
+      "total_additions": 71,
+      "total_deletions": 9,
+      "accepted_lines": 54,
+      "overriden_lines": 12,
+      "messages_url": "https://usegitai.com/cas/b2f4c828eb2e710228087978a77caaf342da24eed88d0291cfb05ed66b27dd96"
+    }
+  },
+  "humans": {
+    "h_b2f6efe2daa9cd": {
+      "author": "Mikey Dorje"
+    }
+  }
+}

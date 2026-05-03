@@ -1,0 +1,24 @@
+index.html
+  267082cf11b8d793 90-95,97-98,100-101,106-108,110,114-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "aea419720c78915b1e9d465f828fc8d4bb90264d",
+  "prompts": {
+    "267082cf11b8d793": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "0bf40df1-3868-43ae-98b5-b5376fe6a47f",
+        "model": "unknown"
+      },
+      "human_author": "Mikey Dorje",
+      "messages": [],
+      "total_additions": 18,
+      "total_deletions": 14,
+      "accepted_lines": 18,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/f9d6fc208f98dbbbfb0bf2081c237ea7a419777818de885616c18a4339770457"
+    }
+  }
+}

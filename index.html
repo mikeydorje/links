@@ -156,13 +156,7 @@
     <p class="release-title">Out now only on Bandcamp</p>
 
     <div class="cta-group">
-      <a class="cta" href="https://mikeydorje.com/spark" target="_blank" rel="noopener noreferrer" aria-label="Grab a Spark Bandcamp download code">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
-        <span>Grab a free download code</span>
-      </a>
-      <p class="count" id="countText"><strong id="codesLeft">…</strong> remaining</p>
-
-      <a class="cta secondary" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Go to Bandcamp to pay what you want or free">
+      <a class="cta" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Go to Bandcamp to pay what you want or free">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
         <span>Pay-what-you-want</span>
       </a>
@@ -172,24 +166,6 @@
   </main>
 
   <script>
-    async function loadCount() {
-      const fallback = "Unknown";
-      try {
-        const res = await fetch("https://mikeydorje.com/spark/status", { method: "GET" });
-        if (!res.ok) throw new Error("status fetch failed");
-
-        const data = await res.json();
-        const count = Number.isFinite(data.available) ? data.available : fallback;
-
-        const left = document.getElementById("codesLeft");
-        left.textContent = String(count);
-      } catch {
-        const left = document.getElementById("codesLeft");
-        left.textContent = fallback;
-      }
-    }
-
-    loadCount();
   </script>
 </body>
 </html>

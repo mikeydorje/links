@@ -1,0 +1,22 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "81e41d78acd34ba8be5ea974febd0301a9d23279",
+  "prompts": {
+    "9ea16cf409cd2ebc": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "7261efc2-ed2b-4f30-9e94-f542f1d3d9ef",
+        "model": "unknown"
+      },
+      "human_author": "Mikey Dorje",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 3,
+      "accepted_lines": 0,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/95368a6a9e1ab121956b706209a2519729589b57cecd78c595a6c93ec8fea521"
+    }
+  }
+}

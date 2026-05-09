@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#050508"/>
+  <g fill="none" stroke="#7dffdc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Two crossed dorjes (vishvavajra) rotated 45deg around center -->
+    <g transform="translate(32 32) rotate(45)">
+      <!-- Horizontal dorje -->
+      <g>
+        <line x1="-22" y1="0" x2="22" y2="0"/>
+        <!-- central hub -->
+        <circle cx="0" cy="0" r="3"/>
+        <!-- left prongs -->
+        <line x1="-10" y1="0" x2="-10" y2="-6"/>
+        <line x1="-10" y1="0" x2="-10" y2="6"/>
+        <line x1="-22" y1="0" x2="-18" y2="-6"/>
+        <line x1="-22" y1="0" x2="-18" y2="6"/>
+        <line x1="-18" y1="-6" x2="-10" y2="-6"/>
+        <line x1="-18" y1="6" x2="-10" y2="6"/>
+        <!-- right prongs -->
+        <line x1="10" y1="0" x2="10" y2="-6"/>
+        <line x1="10" y1="0" x2="10" y2="6"/>
+        <line x1="22" y1="0" x2="18" y2="-6"/>
+        <line x1="22" y1="0" x2="18" y2="6"/>
+        <line x1="18" y1="-6" x2="10" y2="-6"/>
+        <line x1="18" y1="6" x2="10" y2="6"/>
+      </g>
+      <!-- Vertical dorje -->
+      <g transform="rotate(90)">
+        <line x1="-22" y1="0" x2="22" y2="0"/>
+        <line x1="-10" y1="0" x2="-10" y2="-6"/>
+        <line x1="-10" y1="0" x2="-10" y2="6"/>
+        <line x1="-22" y1="0" x2="-18" y2="-6"/>
+        <line x1="-22" y1="0" x2="-18" y2="6"/>
+        <line x1="-18" y1="-6" x2="-10" y2="-6"/>
+        <line x1="-18" y1="6" x2="-10" y2="6"/>
+        <line x1="10" y1="0" x2="10" y2="-6"/>
+        <line x1="10" y1="0" x2="10" y2="6"/>
+        <line x1="22" y1="0" x2="18" y2="-6"/>
+        <line x1="22" y1="0" x2="18" y2="6"/>
+        <line x1="18" y1="-6" x2="10" y2="-6"/>
+        <line x1="18" y1="6" x2="10" y2="6"/>
+      </g>
+      <!-- Center hub on top -->
+      <circle cx="0" cy="0" r="3.5" fill="#050508"/>
+    </g>
+  </g>
+</svg>

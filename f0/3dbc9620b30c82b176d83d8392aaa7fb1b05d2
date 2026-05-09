@@ -1,0 +1,19 @@
+index.html
+  h_a5e25bc086eb00 13,122-129,133-136,171,173-177,181
+favicon.svg
+  h_a5e25bc086eb00 1-46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "f03dbc9620b30c82b176d83d8392aaa7fb1b05d2",
+  "prompts": {},
+  "humans": {
+    "h_a5e25bc086eb00": {
+      "author": "Mikey Dorje <mikeydorje@gmail.com>"
+    },
+    "h_b2f6efe2daa9cd": {
+      "author": "Mikey Dorje"
+    }
+  }
+}

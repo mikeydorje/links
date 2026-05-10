@@ -1,0 +1,24 @@
+index.html
+  s_2e81892e8c5517::t_983db899a5badd 7,9,65,70,81,102,105-107,110-112,146-208,210-239,243,245,251-252,255-265,274-281,283,285-301,308,310-427
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "9ed9e8932df7c788dadd6b90c882db5bdc9a7c1f",
+  "prompts": {},
+  "humans": {
+    "h_b2f6efe2daa9cd": {
+      "author": "Mikey Dorje"
+    }
+  },
+  "sessions": {
+    "s_2e81892e8c5517": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "c37cf7b9-890c-4c6f-80cf-3ffcfa1fbfb3",
+        "model": "unknown"
+      },
+      "human_author": "Mikey Dorje <mikeydorje@gmail.com>"
+    }
+  }
+}

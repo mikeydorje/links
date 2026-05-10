@@ -40,7 +40,6 @@
       border: 1px solid rgba(255,255,255,0.08);
       background: rgba(255,255,255,0.02);
       object-fit: cover;
-      box-shadow: 0 0 40px rgba(125, 255, 220, 0.08);
     }
 
     .album-title {
@@ -100,7 +99,6 @@
       text-transform: uppercase;
       font-weight: 600;
       font-family: inherit;
-      box-shadow: 0 0 30px rgba(125, 255, 220, 0.12);
       transition: all 0.25s;
       cursor: pointer;
       -webkit-appearance: none;
@@ -115,7 +113,6 @@
       border-color: rgba(125, 255, 220, 0.6);
       color: #ffffff;
       transform: translateY(-2px);
-      box-shadow: 0 0 40px rgba(125, 255, 220, 0.25);
     }
 
     .cta svg {
@@ -140,7 +137,6 @@
       background: rgba(255,255,255,0.06);
       color: #ffffff;
       border-color: rgba(255,255,255,0.5);
-      box-shadow: 0 0 30px rgba(255,255,255,0.08);
     }
 
     .cta[aria-disabled="true"] {
@@ -154,7 +150,6 @@
       border: 1px solid rgba(125, 255, 220, 0.35);
       border-radius: 14px;
       background: rgba(125, 255, 220, 0.06);
-      box-shadow: 0 0 30px rgba(125, 255, 220, 0.12);
       text-align: center;
       display: none;
     }
@@ -240,16 +235,16 @@
     }
 
     .desc a {
-      color: rgba(125, 255, 220, 0.85);
+      color: inherit;
       text-decoration: underline;
-      text-decoration-color: rgba(125, 255, 220, 0.35);
+      text-decoration-color: rgba(255,255,255,0.18);
       text-underline-offset: 3px;
       transition: color 0.2s, text-decoration-color 0.2s;
     }
 
     .desc a:hover {
-      color: rgba(125, 255, 220, 1);
-      text-decoration-color: rgba(125, 255, 220, 0.9);
+      color: rgba(255,255,255,0.9);
+      text-decoration-color: rgba(255,255,255,0.4);
     }
 
     .cta-group.secondary-group {
@@ -401,7 +396,6 @@
       autoLink.href = redeemUrl || ('https://bandcamp.com/yum?code=' + encodeURIComponent(code));
       panel.classList.add('visible');
       ctaGroup.style.display = 'none';
-      countEl.style.display = 'none';
     }
 
     function restoreSavedCode() {

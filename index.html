@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spark - Mikey Dorje</title>
-  <meta name="description" content="Grab a Spark download code or pay what you want on Bandcamp.">
+  <meta name="description" content="Grab a free Spark download code or purchase on Bandcamp.">
   <meta property="og:title" content="Spark - Mikey Dorje">
-  <meta property="og:description" content="Grab a Spark download code or pay what you want on Bandcamp.">
+  <meta property="og:description" content="Grab a free Spark download code or purchase on Bandcamp.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mikeydorje.com/links/">
   <meta name="theme-color" content="#050508">
@@ -62,12 +62,12 @@
     }
 
     .count {
-      margin-top: -4px;
-      margin-bottom: 6px;
+      margin-top: 14px;
       font-size: 11px;
       letter-spacing: 1.2px;
       text-transform: uppercase;
       color: rgba(255,255,255,0.5);
+      min-height: 1.4em;
     }
 
     .count strong {
@@ -78,7 +78,7 @@
     }
 
     .cta-group {
-      margin-top: 22px;
+      margin-top: 18px;
       display: grid;
       gap: 10px;
     }
@@ -99,9 +99,16 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       font-weight: 600;
+      font-family: inherit;
       box-shadow: 0 0 30px rgba(125, 255, 220, 0.12);
       transition: all 0.25s;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
     }
+
+    button.cta { line-height: 1; }
+    button.cta:disabled { cursor: default; }
 
     .cta:hover {
       background: rgba(125, 255, 220, 0.15);
@@ -136,29 +143,126 @@
       box-shadow: 0 0 30px rgba(255,255,255,0.08);
     }
 
-    .desc {
-      margin-top: 18px;
-      color: rgba(255,255,255,0.38);
-      font-size: 12px;
-      line-height: 1.55;
-      max-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
+    .cta[aria-disabled="true"] {
+      opacity: 0.5;
+      pointer-events: none;
     }
 
-    .desc a {
-      color: inherit;
+    .code-panel {
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid rgba(125, 255, 220, 0.35);
+      border-radius: 14px;
+      background: rgba(125, 255, 220, 0.06);
+      box-shadow: 0 0 30px rgba(125, 255, 220, 0.12);
+      text-align: center;
+      display: none;
+    }
+    .code-panel.visible { display: block; }
+    .code-panel .label {
+      font-size: 10px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 10px;
+    }
+    .code-box {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border: 1px dashed rgba(125, 255, 220, 0.5);
+      border-radius: 10px;
+      background: rgba(0,0,0,0.35);
+      color: rgba(125, 255, 220, 0.95);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: all;
+      transition: all 0.2s;
+    }
+    .code-box:hover {
+      border-color: rgba(125, 255, 220, 0.9);
+      background: rgba(0,0,0,0.5);
+    }
+    .code-box.copied {
+      color: rgba(255,255,255,0.95);
+      border-style: solid;
+      border-color: rgba(125, 255, 220, 0.9);
+    }
+    .code-box .copy-hint {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      font-weight: 500;
+    }
+    .code-actions {
+      margin-top: 14px;
+      display: grid;
+      gap: 6px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+    }
+    .code-actions a {
+      color: rgba(255,255,255,0.75);
       text-decoration: underline;
       text-decoration-color: rgba(255,255,255,0.25);
       text-underline-offset: 3px;
       transition: color 0.2s, text-decoration-color 0.2s;
     }
-
-    .desc a:hover {
-      color: rgba(255,255,255,0.7);
-      text-decoration-color: rgba(255,255,255,0.5);
+    .code-actions a:hover {
+      color: #ffffff;
+      text-decoration-color: rgba(125, 255, 220, 0.7);
+    }
+    .code-actions .auto {
+      color: rgba(125, 255, 220, 0.85);
+      text-decoration-color: rgba(125, 255, 220, 0.4);
+    }
+    .code-actions .auto:hover {
+      color: rgba(125, 255, 220, 1);
+      text-decoration-color: rgba(125, 255, 220, 0.9);
     }
 
+    .desc {
+      margin: 22px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(125, 255, 220, 0.15);
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      line-height: 1.65;
+      max-width: 340px;
+    }
+
+    .desc a {
+      color: rgba(125, 255, 220, 0.85);
+      text-decoration: underline;
+      text-decoration-color: rgba(125, 255, 220, 0.35);
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    .desc a:hover {
+      color: rgba(125, 255, 220, 1);
+      text-decoration-color: rgba(125, 255, 220, 0.9);
+    }
+
+    .cta-group.secondary-group {
+      margin-top: 18px;
+    }
+
+    .copyright {
+      margin-top: 32px;
+      font-size: 10px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
   </style>
 </head>
 <body>
@@ -167,18 +271,159 @@
     <h1 class="album-title">Mikey Dorje &mdash; Spark</h1>
     <p class="release-title">Out now only on Bandcamp</p>
 
-    <div class="cta-group">
-      <a class="cta" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Get Spark on Bandcamp - pay what you want or free">
+    <p class="count" id="count" aria-live="polite"></p>
+
+    <div class="cta-group" id="cta-group">
+      <button type="button" class="cta" id="download-cta" aria-label="Get a free Bandcamp download code">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
-        <span>Pay what you want</span>
+        <span id="download-label">Free Download Code</span>
+      </button>
+      <a class="cta" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Purchase Spark on Bandcamp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
+        <span>Purchase on Bandcamp</span>
       </a>
+    </div>
+
+    <div class="code-panel" id="code-panel" aria-live="polite">
+      <div class="label">Your code</div>
+      <div class="code-box" id="code-box" role="button" tabindex="0" title="Click to copy">
+        <span id="code-text"></span>
+        <span class="copy-hint" id="copy-hint">Copy</span>
+      </div>
+      <div class="code-actions">
+        <div>Redeem at <a id="manual-link" href="https://mikeydorje.bandcamp.com/yum" target="_blank" rel="noopener noreferrer">mikeydorje.bandcamp.com/yum</a></div>
+        <div><a id="auto-link" class="auto" href="#" target="_blank" rel="noopener noreferrer">or click here to apply automatically &rarr;</a></div>
+      </div>
+    </div>
+
+    <p class="desc">Spark is only on Bandcamp &mdash; grab a free download code or purchase to support. Stream, <a href="https://bandcamp.com/about_playlists" target="_blank" rel="noopener noreferrer">build playlists</a>, and add to your collection.</p>
+
+    <div class="cta-group secondary-group">
       <a class="cta secondary" href="https://open.spotify.com/artist/2i0W2ULTtPnarfN4Xtk2R9" target="_blank" rel="noopener noreferrer" aria-label="Listen to more of Mikey Dorje on Spotify">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.99-8.16-2.56-11.98-1.4a.94.94 0 1 1-.55-1.79c4.37-1.33 9.8-.69 13.51 1.59.44.27.58.85.31 1.29zm.13-3.4C15.27 8.45 8.84 8.22 5.21 9.32a1.13 1.13 0 1 1-.66-2.16c4.17-1.27 11.27-1.02 15.7 1.61a1.13 1.13 0 0 1-1.15 1.94z"/></svg>
         <span>More on Spotify</span>
       </a>
     </div>
 
-    <p class="desc">Spark is only on Bandcamp &mdash; download, add to your collection, <a href="https://bandcamp.com/about_playlists" target="_blank" rel="noopener noreferrer">build playlists</a>, and stream for free. Listen to more of my music on Spotify.</p>
+    <footer class="copyright">&copy; <span id="year">2026</span> Mikey Dorje</footer>
   </main>
+
+  <script>
+    const countEl = document.getElementById('count');
+    const ctaGroup = document.getElementById('cta-group');
+    const cta = document.getElementById('download-cta');
+    const label = document.getElementById('download-label');
+    const panel = document.getElementById('code-panel');
+    const codeBox = document.getElementById('code-box');
+    const codeText = document.getElementById('code-text');
+    const copyHint = document.getElementById('copy-hint');
+    const manualLink = document.getElementById('manual-link');
+    const autoLink = document.getElementById('auto-link');
+
+    let claiming = false;
+
+    async function loadCount() {
+      try {
+        const res = await fetch('/spark-download/status', { cache: 'no-store' });
+        if (!res.ok) throw new Error('status ' + res.status);
+        const data = await res.json();
+        const n = Number(data.available) || 0;
+        if (n === 0) {
+          countEl.textContent = 'No codes available right now';
+          cta.setAttribute('aria-disabled', 'true');
+          cta.disabled = true;
+          label.textContent = 'Sold out for now';
+        } else {
+          countEl.innerHTML = '<strong>' + n + '</strong> code' + (n === 1 ? '' : 's') + ' available';
+        }
+      } catch (e) {
+        countEl.textContent = '';
+      }
+    }
+
+    async function copyCode(code) {
+      try {
+        await navigator.clipboard.writeText(code);
+        codeBox.classList.add('copied');
+        copyHint.textContent = 'Copied!';
+        setTimeout(() => {
+          codeBox.classList.remove('copied');
+          copyHint.textContent = 'Copy';
+        }, 1800);
+      } catch (e) {
+        const sel = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(codeText);
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    }
+
+    async function claim() {
+      if (claiming || cta.disabled) return;
+      claiming = true;
+      const prevLabel = label.textContent;
+      label.textContent = 'Getting code...';
+      cta.setAttribute('aria-disabled', 'true');
+      try {
+        const res = await fetch('/spark-download/claim', { method: 'POST', cache: 'no-store' });
+        const data = await res.json();
+        if (!data.available || !data.code) {
+          countEl.textContent = 'No codes available right now';
+          label.textContent = 'Sold out for now';
+          cta.disabled = true;
+          return;
+        }
+        showCode(data.code, data.redeem_url, data.manual_url);
+        try {
+          localStorage.setItem('spark_code', JSON.stringify({
+            code: data.code,
+            redeem_url: data.redeem_url,
+            manual_url: data.manual_url,
+            at: Date.now(),
+          }));
+        } catch (_) {}
+        copyCode(data.code);
+        loadCount();
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } catch (e) {
+        label.textContent = prevLabel;
+        cta.removeAttribute('aria-disabled');
+        alert('Could not get a code. Please try again.');
+      } finally {
+        claiming = false;
+      }
+    }
+
+    function showCode(code, redeemUrl, manualUrl) {
+      codeText.textContent = code;
+      manualLink.href = manualUrl || 'https://mikeydorje.bandcamp.com/yum';
+      autoLink.href = redeemUrl || ('https://bandcamp.com/yum?code=' + encodeURIComponent(code));
+      panel.classList.add('visible');
+      ctaGroup.style.display = 'none';
+      countEl.style.display = 'none';
+    }
+
+    function restoreSavedCode() {
+      try {
+        const raw = localStorage.getItem('spark_code');
+        if (!raw) return;
+        const saved = JSON.parse(raw);
+        if (!saved || !saved.code) return;
+        showCode(saved.code, saved.redeem_url, saved.manual_url);
+      } catch (_) {}
+    }
+
+    cta.addEventListener('click', claim);
+    codeBox.addEventListener('click', () => copyCode(codeText.textContent));
+    codeBox.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyCode(codeText.textContent); }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    restoreSavedCode();
+    loadCount();
+  </script>
 </body>
 </html>

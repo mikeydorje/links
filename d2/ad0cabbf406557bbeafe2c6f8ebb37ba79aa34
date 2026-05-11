@@ -1,0 +1,17 @@
+index.html
+  h_a5e25bc086eb00 56-57,82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "d2ad0cabbf406557bbeafe2c6f8ebb37ba79aa34",
+  "prompts": {},
+  "humans": {
+    "h_a5e25bc086eb00": {
+      "author": "Mikey Dorje <mikeydorje@gmail.com>"
+    },
+    "h_b2f6efe2daa9cd": {
+      "author": "Mikey Dorje"
+    }
+  }
+}

@@ -87,20 +87,23 @@
       width: 16px;
       height: 16px;
       flex: 0 0 16px;
-      color: rgba(255, 255, 255, 0.85);
-      transition: color 0.2s ease;
+      transition: transform 0.2s ease, filter 0.2s ease;
     }
 
-    .cta.youtube:hover svg {
-      color: #ff3b30;
+    .cta.youtube svg {
+      color: #ff0000;
     }
 
-    .cta.bandcamp:hover svg {
-      color: #629aa9;
+    .cta.bandcamp svg {
+      color: #1da0c3;
     }
 
-    .cta.spotify:hover svg {
+    .cta.spotify svg {
       color: #1ed760;
+    }
+
+    .cta:hover svg {
+      filter: brightness(1.2);
     }
 
     .copyright {

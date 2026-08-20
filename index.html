@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spark - Mikey Dorje</title>
-  <meta name="description" content="Grab a free Spark download code or purchase on Bandcamp.">
-  <meta property="og:title" content="Spark - Mikey Dorje">
-  <meta property="og:description" content="Grab a free Spark download code or purchase on Bandcamp.">
+  <title>Mikey Dorje &mdash; Links</title>
+  <meta name="description" content="Links to Mikey Dorje music, live techno jams, and releases on Bandcamp, YouTube, and Spotify.">
+  <meta property="og:title" content="Mikey Dorje &mdash; Links">
+  <meta property="og:description" content="Links to Mikey Dorje music, live techno jams, and releases on Bandcamp, YouTube, and Spotify.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mikeydorje.com/links/">
   <meta name="theme-color" content="#050508">
@@ -18,70 +18,33 @@
       min-height: 100vh;
       display: grid;
       place-items: center;
-      padding: 28px 20px;
+      padding: 36px 20px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background: #050508;
-      color: rgba(255,255,255,0.35);
-      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.45);
+      line-height: 1.5;
       font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    .release-wrap {
-      width: min(420px, 100%);
+    .wrap {
+      width: min(440px, 100%);
       text-align: center;
     }
 
-    .cover {
-      width: 100%;
-      max-width: 360px;
-      aspect-ratio: 1 / 1;
-      margin: 0 auto;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.02);
-      object-fit: cover;
-    }
-
-    .album-title {
-      margin-top: 18px;
-      font-size: 15px;
-      letter-spacing: 1.6px;
+    .title {
+      font-size: 16px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.95);
+      color: rgba(255, 255, 255, 0.95);
       font-weight: 600;
-    }
-
-    .release-title {
-      margin-top: 6px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid rgba(125, 255, 220, 0.15);
-      font-size: 11px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      font-weight: 400;
-    }
-
-    .count {
-      margin: -5px 0 4px;
-      font-size: 10px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-      min-height: 1.4em;
-    }
-
-    .count strong {
-      color: rgba(125, 255, 220, 0.95);
-      font-weight: 700;
-      font-variant-numeric: tabular-nums;
-      margin-right: 2px;
+      margin-bottom: 26px;
     }
 
     .cta-group {
-      margin-top: 22px;
       display: grid;
-      gap: 10px;
+      gap: 12px;
     }
 
     .cta {
@@ -90,211 +53,89 @@
       align-items: center;
       justify-content: center;
       gap: 12px;
-      padding: 17px 20px;
-      border: 1px solid rgba(125, 255, 220, 0.35);
+      padding: 16px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 14px;
-      background: rgba(125, 255, 220, 0.08);
-      color: rgba(255,255,255,0.95);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(255, 255, 255, 0.92);
       text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      font-weight: 500;
       font-family: inherit;
-      transition: all 0.25s;
+      line-height: 1.35;
+      text-align: center;
+      transition: all 0.22s ease;
       cursor: pointer;
       -webkit-appearance: none;
       appearance: none;
     }
 
-    button.cta { line-height: 1; }
-    a.cta { line-height: 1; }
-    button.cta:disabled { cursor: default; }
-
     .cta:hover {
-      background: rgba(125, 255, 220, 0.15);
-      border-color: rgba(125, 255, 220, 0.6);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.45);
       color: #ffffff;
       transform: translateY(-2px);
+    }
+
+    .cta:active {
+      transform: translateY(0);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .cta svg {
       width: 16px;
       height: 16px;
       flex: 0 0 16px;
-      color: rgba(125, 255, 220, 0.95);
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.2s ease;
     }
 
-    .cta.secondary {
-      background: rgba(255,255,255,0.02);
-      color: rgba(255,255,255,0.95);
-      border-color: rgba(255,255,255,0.25);
-      box-shadow: none;
+    .cta.youtube:hover svg {
+      color: #ff3b30;
     }
 
-    .cta.secondary svg {
-      color: rgba(255,255,255,0.95);
+    .cta.bandcamp:hover svg {
+      color: #629aa9;
     }
 
-    .cta.secondary:hover {
-      background: rgba(255,255,255,0.06);
-      color: #ffffff;
-      border-color: rgba(255,255,255,0.5);
-    }
-
-    .cta[aria-disabled="true"] {
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    .code-panel {
-      margin-top: 16px;
-      padding: 16px;
-      border: 1px solid rgba(125, 255, 220, 0.35);
-      border-radius: 14px;
-      background: rgba(125, 255, 220, 0.06);
-      text-align: center;
-      display: none;
-    }
-    .code-panel.visible { display: block; }
-    .code-panel .label {
-      font-size: 10px;
-      letter-spacing: 1.6px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-      margin-bottom: 10px;
-    }
-    .code-box {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 16px;
-      border: 1px dashed rgba(125, 255, 220, 0.5);
-      border-radius: 10px;
-      background: rgba(0,0,0,0.35);
-      color: rgba(125, 255, 220, 0.95);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: 18px;
-      letter-spacing: 2px;
-      font-weight: 600;
-      cursor: pointer;
-      user-select: all;
-      transition: all 0.2s;
-    }
-    .code-box:hover {
-      border-color: rgba(125, 255, 220, 0.9);
-      background: rgba(0,0,0,0.5);
-    }
-    .code-box.copied {
-      color: rgba(255,255,255,0.95);
-      border-style: solid;
-      border-color: rgba(125, 255, 220, 0.9);
-    }
-    .code-box .copy-hint {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 10px;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      font-weight: 500;
-    }
-    .code-actions {
-      margin-top: 14px;
-      display: grid;
-      gap: 6px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.55);
-    }
-    .code-actions a {
-      color: rgba(255,255,255,0.75);
-      text-decoration: underline;
-      text-decoration-color: rgba(255,255,255,0.25);
-      text-underline-offset: 3px;
-      transition: color 0.2s, text-decoration-color 0.2s;
-    }
-    .code-actions a:hover {
-      color: #ffffff;
-      text-decoration-color: rgba(125, 255, 220, 0.7);
-    }
-    .code-actions .auto {
-      color: rgba(125, 255, 220, 0.85);
-      text-decoration-color: rgba(125, 255, 220, 0.4);
-    }
-    .code-actions .auto:hover {
-      color: rgba(125, 255, 220, 1);
-      text-decoration-color: rgba(125, 255, 220, 0.9);
-    }
-
-    .desc {
-      margin: 22px auto 0;
-      color: rgba(255,255,255,0.7);
-      font-size: 13px;
-      line-height: 1.65;
-      max-width: 340px;
-    }
-
-    .desc a {
-      color: inherit;
-      text-decoration: underline;
-      text-decoration-color: rgba(255,255,255,0.18);
-      text-underline-offset: 3px;
-      transition: color 0.2s, text-decoration-color 0.2s;
-    }
-
-    .desc a:hover {
-      color: rgba(255,255,255,0.9);
-      text-decoration-color: rgba(255,255,255,0.4);
-    }
-
-    .cta-group.secondary-group {
-      margin-top: 18px;
+    .cta.spotify:hover svg {
+      color: #1ed760;
     }
 
     .copyright {
-      margin-top: 32px;
+      margin-top: 36px;
       font-size: 10px;
       letter-spacing: 1.4px;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255, 255, 255, 0.25);
     }
+
+    /*
+      NOTE: Bandcamp code giveaway system is archived in bandcamp-code-feature.backup.html
+      for easy future re-enablement.
+    */
   </style>
 </head>
 <body>
-  <main class="release-wrap">
-    <img class="cover" src="SPARK.png" alt="Mikey Dorje - Spark album cover">
-    <h1 class="album-title">Mikey Dorje &mdash; Spark</h1>
-    <p class="release-title">Out now only on Bandcamp</p>
+  <main class="wrap">
+    <h1 class="title">Mikey Dorje</h1>
 
-    <div class="cta-group" id="cta-group">
-      <button type="button" class="cta" id="download-cta" aria-label="Get a free Bandcamp download code">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
-        <span id="download-label">Free Download Code</span>
-      </button>
-      <p class="count" id="count" aria-live="polite"></p>
-      <a class="cta" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="Purchase Spark on Bandcamp">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
-        <span>Purchase on Bandcamp</span>
+    <div class="cta-group">
+      <!-- 1. Live Techno Jam on YouTube -->
+      <a class="cta youtube" href="https://www.youtube.com/watch?v=vp9oG1oMUEQ" target="_blank" rel="noopener noreferrer" aria-label="Live Techno Jam with M_MCHN on YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>Live Techno Jam with M_MCHN</span>
       </a>
-    </div>
 
-    <div class="code-panel" id="code-panel" aria-live="polite">
-      <div class="label">Your code</div>
-      <div class="code-box" id="code-box" role="button" tabindex="0" title="Click to copy">
-        <span id="code-text"></span>
-        <span class="copy-hint" id="copy-hint">Copy</span>
-      </div>
-      <div class="code-actions">
-        <div>Redeem at <a id="manual-link" href="https://mikeydorje.bandcamp.com/yum" target="_blank" rel="noopener noreferrer">mikeydorje.bandcamp.com/yum</a></div>
-        <div><a id="auto-link" class="auto" href="#" target="_blank" rel="noopener noreferrer">or click here to apply automatically &rarr;</a></div>
-      </div>
-    </div>
+      <!-- 2. Bandcamp EP -->
+      <a class="cta bandcamp" href="https://mikeydorje.bandcamp.com" target="_blank" rel="noopener noreferrer" aria-label="New EP Spark out now only on Bandcamp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 6h11L11.2 18H.2L6.5 6Z"/></svg>
+        <span>New EP Spark out now only on Bandcamp</span>
+      </a>
 
-    <p class="desc">Spark is only on Bandcamp. Grab a free download code or purchase to support. Stream, <a href="https://bandcamp.com/about_playlists" target="_blank" rel="noopener noreferrer">build playlists</a>, and add to your collection.</p>
-
-    <div class="cta-group secondary-group">
-      <a class="cta secondary" href="https://open.spotify.com/artist/2i0W2ULTtPnarfN4Xtk2R9" target="_blank" rel="noopener noreferrer" aria-label="Listen to more of Mikey Dorje on Spotify">
+      <!-- 3. Spotify Link -->
+      <a class="cta spotify" href="https://open.spotify.com/artist/2i0W2ULTtPnarfN4Xtk2R9" target="_blank" rel="noopener noreferrer" aria-label="Listen to more of Mikey Dorje on Spotify">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.32a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.36.22.47.69.25 1.03zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.99-8.16-2.56-11.98-1.4a.94.94 0 1 1-.55-1.79c4.37-1.33 9.8-.69 13.51 1.59.44.27.58.85.31 1.29zm.13-3.4C15.27 8.45 8.84 8.22 5.21 9.32a1.13 1.13 0 1 1-.66-2.16c4.17-1.27 11.27-1.02 15.7 1.61a1.13 1.13 0 0 1-1.15 1.94z"/></svg>
         <span>More on Spotify</span>
       </a>
@@ -304,120 +145,7 @@
   </main>
 
   <script>
-    const countEl = document.getElementById('count');
-    const ctaGroup = document.getElementById('cta-group');
-    const cta = document.getElementById('download-cta');
-    const label = document.getElementById('download-label');
-    const panel = document.getElementById('code-panel');
-    const codeBox = document.getElementById('code-box');
-    const codeText = document.getElementById('code-text');
-    const copyHint = document.getElementById('copy-hint');
-    const manualLink = document.getElementById('manual-link');
-    const autoLink = document.getElementById('auto-link');
-
-    let claiming = false;
-
-    async function loadCount() {
-      try {
-        const res = await fetch('/spark-download/status', { cache: 'no-store' });
-        if (!res.ok) throw new Error('status ' + res.status);
-        const data = await res.json();
-        const n = Number(data.available) || 0;
-        if (n === 0) {
-          countEl.textContent = 'No codes available right now';
-          cta.setAttribute('aria-disabled', 'true');
-          cta.disabled = true;
-          label.textContent = 'Sold out for now';
-        } else {
-          countEl.innerHTML = '<strong>' + n + '</strong> code' + (n === 1 ? '' : 's') + ' available';
-        }
-      } catch (e) {
-        countEl.textContent = '';
-      }
-    }
-
-    async function copyCode(code) {
-      try {
-        await navigator.clipboard.writeText(code);
-        codeBox.classList.add('copied');
-        copyHint.textContent = 'Copied!';
-        setTimeout(() => {
-          codeBox.classList.remove('copied');
-          copyHint.textContent = 'Copy';
-        }, 1800);
-      } catch (e) {
-        const sel = window.getSelection();
-        const range = document.createRange();
-        range.selectNodeContents(codeText);
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
-    }
-
-    async function claim() {
-      if (claiming || cta.disabled) return;
-      claiming = true;
-      const prevLabel = label.textContent;
-      label.textContent = 'Getting code...';
-      cta.setAttribute('aria-disabled', 'true');
-      try {
-        const res = await fetch('/spark-download/claim', { method: 'POST', cache: 'no-store' });
-        const data = await res.json();
-        if (!data.available || !data.code) {
-          countEl.textContent = 'No codes available right now';
-          label.textContent = 'Sold out for now';
-          cta.disabled = true;
-          return;
-        }
-        showCode(data.code, data.redeem_url, data.manual_url);
-        try {
-          localStorage.setItem('spark_code', JSON.stringify({
-            code: data.code,
-            redeem_url: data.redeem_url,
-            manual_url: data.manual_url,
-            at: Date.now(),
-          }));
-        } catch (_) {}
-        copyCode(data.code);
-        loadCount();
-        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } catch (e) {
-        label.textContent = prevLabel;
-        cta.removeAttribute('aria-disabled');
-        alert('Could not get a code. Please try again.');
-      } finally {
-        claiming = false;
-      }
-    }
-
-    function showCode(code, redeemUrl, manualUrl) {
-      codeText.textContent = code;
-      manualLink.href = manualUrl || 'https://mikeydorje.bandcamp.com/yum';
-      autoLink.href = redeemUrl || ('https://bandcamp.com/yum?code=' + encodeURIComponent(code));
-      panel.classList.add('visible');
-      ctaGroup.style.display = 'none';
-    }
-
-    function restoreSavedCode() {
-      try {
-        const raw = localStorage.getItem('spark_code');
-        if (!raw) return;
-        const saved = JSON.parse(raw);
-        if (!saved || !saved.code) return;
-        showCode(saved.code, saved.redeem_url, saved.manual_url);
-      } catch (_) {}
-    }
-
-    cta.addEventListener('click', claim);
-    codeBox.addEventListener('click', () => copyCode(codeText.textContent));
-    codeBox.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copyCode(codeText.textContent); }
-    });
-
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    restoreSavedCode();
-    loadCount();
   </script>
 </body>
 </html>
